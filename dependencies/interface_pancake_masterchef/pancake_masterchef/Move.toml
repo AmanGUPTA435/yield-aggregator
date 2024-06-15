@@ -1,0 +1,13 @@
+[package]
+name = "PancakeMasterchef"
+version = "0.0.0"
+
+[addresses]
+pancake_masterchef = "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }

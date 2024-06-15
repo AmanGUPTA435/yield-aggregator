@@ -1,0 +1,12 @@
+[package]
+name = "TortugaGovernance"
+version = "0.0.0"
+
+[addresses]
+tortuga_governance = "0x84d7aeef42d38a5ffc3ccef853e1b82e4958659d16a7de736a29c55fbbeb0114"
+std = "0x1"
+aptos_framework = "0x1"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }

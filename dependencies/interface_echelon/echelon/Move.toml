@@ -1,0 +1,18 @@
+[package]
+name = "Lending"
+version = "0.0.0"
+
+[addresses]
+lending = "0xc6bc659f1649553c1a3fa05d9727433dc03843baac29473c817d06d39e7621ba"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+aptos_token = "0x3"
+fixed_point64 = "0x4dcae85fc5559071906cd5c76b7420fcbb4b0a92f00ab40ffc394aadbbff5ee9"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }
+AptosToken={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token",rev="mainnet"}
+FixedPoint64={local="../.././interface_fixed_point64/fixed_point64"}
+

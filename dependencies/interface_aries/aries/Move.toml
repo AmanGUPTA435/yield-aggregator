@@ -1,0 +1,23 @@
+[package]
+name = "Aries"
+version = "0.0.0"
+
+[addresses]
+controller = "0x9770fa9c725cbd97eb50b2be5f7416efdfd1f1554beb0750d4dae4c64e860da3"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+aptos_token = "0x3"
+aptos_token_objects ="0x4"
+decimal = "0x9770fa9c725cbd97eb50b2be5f7416efdfd1f1554beb0750d4dae4c64e860da3"
+utils = "0x9770fa9c725cbd97eb50b2be5f7416efdfd1f1554beb0750d4dae4c64e860da3"
+config = "0x9770fa9c725cbd97eb50b2be5f7416efdfd1f1554beb0750d4dae4c64e860da3"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }
+AptosToken={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token",rev="mainnet"}
+AptosTokenObjects={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token-objects",rev="mainnet"}  
+Decimal={local="../.././interface_decimal/decimal"}
+AriesConfig={local="../.././interface_reserve/reserve"}
+UtilTypes={local="../.././interface_utils/utils"}

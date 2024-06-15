@@ -1,0 +1,48 @@
+[package]
+name = "BaptswapV2.1"
+# FoT hotfix, unstake hotfix, and added migrate to V2.1 smc
+version = "2.1.0"
+authors = []
+
+[addresses]
+# core V2
+# core V2 hotfix
+baptswap_v2dot1 = "0xe52923154e25c258d9befb0237a30b4001c63dc3bb73011c29cb3739befffcef"
+dev_v2dot1 = "438f261f7d74f1b04d3558165b0c91df8caa623f5adb8e3dc6427f8c145fbbbb"
+# coin deployer
+
+
+alice = "0x123"
+bob = "0x456"
+
+# Mainnet Addresses
+layerzero = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+layerzero_common = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+msglib_auth = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+msglib_v1_1 = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+msglib_v2 = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+zro = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+executor_auth = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+executor_v2 = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+layerzero_apps = "0x43d8cad89263e6936921a0adb8d5d49f0e236c229460f01b14dca073114df2b9"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.bridge]
+local = "../bridge"
+
+[dependencies.BaptSwap]
+local = "../BaptswapV2/BaptSwap"
+
+[dependencies.BaptswapV2]
+local = "../BaptswapV2"
+
+[dependencies.CoinDeployer]
+local = "../BaptswapV2/CoinDeployer"
+
+[dev-dependencies]

@@ -1,0 +1,12 @@
+[package]
+name = "BaptSwap"
+version = "0.1.0"
+
+[dependencies]
+AptosFramework = {git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "mainnet"}
+AptosStdlib = {git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "mainnet"}
+
+[addresses]
+baptswap = "2ad8f7e64c7bffcfe94d7dea84c79380942c30e13f1b12c7a89e98df91d0599b"
+zero = "0000000000000000000000000000000000000000000000000000000000000000"
+test_coin = "0x16"

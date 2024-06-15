@@ -1,0 +1,13 @@
+[package]
+name = "WrappedCoin"
+version = "0.0.0"
+
+[addresses]
+coin = "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea"
+
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }
+AptosToken={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token",rev="mainnet"}
+AptosTokenObjects={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token-objects",rev="mainnet"}

@@ -1,0 +1,15 @@
+[package]
+name = 'AbelCoin'
+version = '1.0.0'
+upgrade_policy = "compatible"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+abel_coin = "0x7c0322595a73b3fc53bb166f5783470afeb1ed9f46d1176db62139991505dc61"

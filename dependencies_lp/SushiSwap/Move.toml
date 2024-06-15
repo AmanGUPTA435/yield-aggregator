@@ -1,0 +1,16 @@
+[package]
+name = "SushiSwap"
+version = "0.0.1"
+
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "mainnet" }
+AptosStdlib = {git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "mainnet"}
+
+[addresses]
+sushi = "0x31a6675cbe84365bf2b0cbce617ece6c47023ef70826533bde5203d32171dc3c"
+zero = "0000000000000000000000000000000000000000000000000000000000000000"
+#Use multi sign address as a default admin
+test_coin = "0x16"
+
+

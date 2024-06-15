@@ -1,0 +1,25 @@
+[package]
+name = "MultihopSwapRouter"
+version = "1.0.0"
+
+[addresses]
+multihop_swap_router_deployer = "0x28b98af2e2b8a6387ee392773135e0bf4b1f05e4c0c79ff51ab84a73e2454be8"
+multihop_swap_router = "0x60955b957956d79bc80b096d3e41bad525dd400d8ce957cdeb05719ed1e4fc26"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.ThalaSwap]
+local = "../../thalaswap"
+
+[dependencies.FixedPoint64]
+git = "https://github.com/ThalaLabs/fixed_point64.git"
+rev = "main"
+
+[dev-dependencies.TestUtils]
+local = "../../test_utils/"
+
+[dev-dependencies.ThalaManager]
+local = "../../thala_manager/"

@@ -1,0 +1,15 @@
+[package]
+name = "obric-swap"
+version = "0.1.0"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "mainnet" }
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "mainnet" }
+CoinList = { git = "https://github.com/hippospace/aptos-coin-list.git", subdir = "", rev = "fad0a11128dfdc72d2fae3f27d96535e377446dd" }
+Aries = { local = "./interface/aries" }
+ObricLendingInterface = { local = "../ObricLendingInterface" }
+AbelLend = { local = "../AbelLend"}
+
+
+[addresses]
+obric = "0xc7ea756470f72ae761b7986e4ed6fd409aad183b1b2d3d2f674d979852f45c4b"

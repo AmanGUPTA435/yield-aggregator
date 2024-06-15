@@ -1,0 +1,17 @@
+[package]
+name = "pool"
+version = "0.0.0"
+
+[addresses]
+Aptoswap = "0xa5d3ac4d429052674ed38adc62d010e52d7c24ca159194d17ddc196ddb7e480b"
+
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "mainnet" }
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-token", rev = "mainnet" }
+
+[dependencies.u256]
+local = "../aptosswapp"
+
+[dependencies.utils]
+local = "../aptosswaputils"

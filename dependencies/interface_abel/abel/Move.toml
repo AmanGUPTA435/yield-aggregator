@@ -1,0 +1,17 @@
+[package]
+name = "AbelLend"
+version = "0.0.0"
+
+[addresses]
+abel = "0xc0188ad3f42e66b5bd3596e642b8f72749b67d84e6349ce325b27117a9406bdf"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+aptos_token = "0x3"
+aptos_token_objects ="0x4"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }
+AptosToken={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token",rev="mainnet"}
+AptosTokenObjects={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token-objects",rev="mainnet"}

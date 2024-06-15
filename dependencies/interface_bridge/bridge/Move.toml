@@ -1,0 +1,21 @@
+[package]
+name = "bridge"
+version = "0.0.0"
+
+[addresses]
+bridge = "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+aptos_token = "0x3"
+aptos_token_objects ="0x4"
+layerzero = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+zro = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }
+AptosToken={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token",rev="mainnet"}
+AptosTokenObjects={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token-objects",rev="mainnet"}
+layerzero={local="../.././interface_layerzero/layerzero"}
+zro={local="../.././interface_layerzero_zro/zro"}

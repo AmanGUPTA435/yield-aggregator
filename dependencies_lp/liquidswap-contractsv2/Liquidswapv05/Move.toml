@@ -1,0 +1,31 @@
+[package]
+name = "Liquidswapv05"
+version = "0.5.0"
+upgrade_policy = "immutable"
+
+[addresses]
+liquidswap_v05 = "0x0163df34fccbf003ce219d3f1d9e70d140b60622cb9dd47599c25fb2f797ba6e"
+
+
+
+# Addresses for tests.
+test_coin_admin = "0x11"
+test_helpers = "0x12"
+
+test_lp_owner = "0x12"
+test_pool_addr = "0x2540b6f8a87ac1cff2de9f5f742854b448cd4521e96f840eda05e63e4e944ed6"
+
+[dependencies.LiquidswapLP]
+local = "../../liquidswap-contracts/liquidswap/liquidswap_lp/"
+
+[dependencies.LiquidswapInitv05]
+local = "../LiquidswapInitv05/"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.UQ64x64]
+git = "https://github.com/pontem-network/UQ64x64.git"
+rev = "v0.3.8"

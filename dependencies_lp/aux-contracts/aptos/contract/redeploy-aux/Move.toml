@@ -1,0 +1,13 @@
+[package]
+name = 'redeploy'
+version = '1.0.0'
+
+[addresses]
+aux = '0xbd35135844473187163ca197ca93b2ab014370587bb0ed3befff9e902d6bb541'
+deployer = '0x5a5e124ea1f3fc5fcfae3c198765c3b4c8d72c7236ae97ef6e5a9bc7cfda549c'
+
+[dependencies.deployer]
+local = "../deployer"
+
+[dependencies.aux]
+local = "../auxexch"

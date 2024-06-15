@@ -1,0 +1,10 @@
+[package]
+name = "ObricLendingInterface"
+version = "0.0.1"
+
+[dependencies]
+AptosFramework = {git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "mainnet"}
+AptosStdlib = {git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "mainnet"}
+
+[addresses]
+obric_lendi = "c7ea756470f72ae761b7986e4ed6fd409aad183b1b2d3d2f674d979852f45c4b"

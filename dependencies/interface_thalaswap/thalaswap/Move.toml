@@ -1,0 +1,19 @@
+[package]
+name = "ThalaSwap"
+version = "0.0.0"
+
+[addresses]
+thalaswap = "0x48271d39d0b05bd6efca2278f22277d6fcc375504f9839fd73f74ace240861af"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+aptos_token = "0x3"
+aptos_token_objects ="0x4"
+fixed_point64 = "0x4dcae85fc5559071906cd5c76b7420fcbb4b0a92f00ab40ffc394aadbbff5ee9"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }
+AptosToken={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token",rev="mainnet"}
+AptosTokenObjects={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token-objects",rev="mainnet"}
+FixedPoint64={local="../.././interface_fixed_point64/fixed_point64"}

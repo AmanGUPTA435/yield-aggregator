@@ -1,0 +1,13 @@
+[package]
+name = 'KanaAggregator'
+version = '0.0.0'
+
+
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'mainnet'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]
+kanalabs_aggregator = "0x56cb3a99714c41b3ffc176f563251d364640eccdba356babb2e5e0077c80e548"

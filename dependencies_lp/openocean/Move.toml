@@ -1,0 +1,33 @@
+[package]
+name = "HippoAggregator"
+version = "0.0.1"
+
+[addresses]
+hippo_aggregator = "2514f69adae8f34d3d86a4c390edb40ecf26e7f7693f033849b4339dd34db033"
+
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "mainnet" }
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-token", rev = "mainnet" }
+pool = { local = "../aptoswap" }
+
+
+[dependencies.AnimeSwapV1]
+local = '../animeswap-contracts/Swap'
+
+[dependencies.Liquidswap]
+local = '../liquidswap-contracts/liquidswap/'
+
+[dependencies.LiquidswapRouterV2]
+local = '../liquidswap-contracts/liquidswap/liquidswap_router_v2/'
+
+[dependencies.Cetue-AMM]
+local = '../cetus-amm-contracts/aptos/'
+
+[dependencies.PancakeSwap]
+local = '../pancake-contracts/pancake-swap/'
+
+[dependencies.aux]
+local = '../aux-contracts/aptos/contract/auxexch/'
+
+

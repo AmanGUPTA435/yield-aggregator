@@ -1,0 +1,16 @@
+[package]
+name = "PancakeOFT"
+version = "0.0.0"
+
+[addresses]
+pancake_oft = "0x159df6b7689437016108a019fd5bef736bac692b6d4a1f10c941f6fbb9a74ca6"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+layerzero = "0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }
+layerzero={local="../.././interface_layerzero/layerzero"}
+

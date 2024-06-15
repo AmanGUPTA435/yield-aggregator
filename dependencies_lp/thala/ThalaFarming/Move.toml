@@ -1,0 +1,34 @@
+[package]
+name = "ThalaFarming"
+version = "1.0.0"
+
+[addresses]
+thala_farming = "6b3720cd988adeaf721ed9d4730da4324d52364871a68eac62b46d21e4d2fa99"
+thala_farming_deployer = "1bf23f0881f8fa149500ff6b7a047f608967c028a8ad7a2100caa84833ce851d"
+thl_vesting = "3c4a58b4a8dffe6d14448072efcdd5a0e0089a22c6837b94f1d7e8bb1552137f"
+
+[dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-stdlib"
+rev = "mainnet"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-framework"
+rev = "mainnet"
+
+[dependencies.FixedPoint64]
+git = "https://github.com/ThalaLabs/fixed_point64.git"
+rev = "main"
+
+[dependencies.THLCoin]
+local = "../coin_aliases/thl_coin_alias/"
+
+[dependencies.ThalaManager]
+local = "../thala_manager/"
+
+[dependencies.ThalaOracle]
+local = "../thala_oracle/"
+
+[dev-dependencies.TestUtils]
+local = "../test_utils/"

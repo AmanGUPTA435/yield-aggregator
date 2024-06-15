@@ -1,0 +1,60 @@
+[package]
+name = "Examplessss"
+version = "0.0.0"
+
+[addresses]
+avex = "0x1ef19f9006d6138e542c3916b8df61af3fd093059a629461cbe335098f9decfa"
+harvest_pool = "0x35056b323c6b094027a63ae4d17664c7dde438c7e0e52f0b96a9864731aa258e"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+aptos_token = "0x3"
+aptos_token_objects = "0x4"
+controller = "0x9770fa9c725cbd97eb50b2be5f7416efdfd1f1554beb0750d4dae4c64e860da3"
+config = "0x9770fa9c725cbd97eb50b2be5f7416efdfd1f1554beb0750d4dae4c64e860da3"
+amnis = "0x111ae3e5bc816a5e63c2da97d0aa3886519e0cd5e4b046659fa35796bd11542a"
+thala = "0xfaf4e633ae9eb31366c9ca24214231760926576c7b625313b3688b5e900731f6"
+liquidswap_v05 = "0x163df34fccbf003ce219d3f1d9e70d140b60622cb9dd47599c25fb2f797ba6e"
+bridge = "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa"
+merkle = "0x5ae6789dd2fec1a9ec9cccfb3acaf12e93d432f0a3a42c92fe1a9d490b7bbc06"
+thalaswap = "0x48271d39d0b05bd6efca2278f22277d6fcc375504f9839fd73f74ace240861af"
+coin = "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea"
+pancake = "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa"
+abel = "0xc0188ad3f42e66b5bd3596e642b8f72749b67d84e6349ce325b27117a9406bdf"
+aptin = "0x3c1d4a86594d681ff7e5d5a233965daeabdc6a15fe5672ceeda5260038857183"
+tortuga = "0x8f396e4246b2ba87b51c0739ef5ea4f26515a98375308c31ac2ec1e42142a57f"
+pancake_masterchef = "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3"
+pancake_oft = "0x159df6b7689437016108a019fd5bef736bac692b6d4a1f10c941f6fbb9a74ca6"
+liquidswap = "0x190d44266241744264b964a37b8f09863167a12d3e70cda39376cfb4e3561e12"
+liquidswap_lp = "0x61d2c22a6cb7831bee0f48363b0eec92369357aece0d1142062f7d5d85c7bef8"
+harvest = "0xb247ddeee87e848315caf9a33b8e4c71ac53db888cb88143d62d2370cca0ead2"
+liquidswap_sp = "0x5a97986a9d031c4567e15b797be516910cfcb4156312482efc6a19c0a30c948"
+cellana = "0x4bf51972879e3b95c4781a5cdcb9e1ee24ef483e7d22f2d903626f126df62bd1"
+lending = "0xc6bc659f1649553c1a3fa05d9727433dc03843baac29473c817d06d39e7621ba"
+
+[dependencies]
+AptosFramework={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-framework",rev="mainnet"}
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-stdlib", rev = "mainnet" }
+AptosToken={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token",rev="mainnet"}
+AptosTokenObjects={git="https://github.com/aptos-labs/aptos-core.git",subdir="aptos-move/framework/aptos-token-objects",rev="mainnet"}
+amnis={local="./dependencies/interface_amnis/amnis"}
+Aries={local="./dependencies/interface_aries/aries"}
+ThalaLSD={local="./dependencies/interface_thala/thala"}
+ThalaSwap={local="./dependencies/interface_thalaswap/thalaswap"}
+Liquidswapv05={local="./dependencies/interface_liquidswap_v05/liquidswap_v05"}
+bridge={local="./dependencies/interface_bridge/bridge"}
+merkle={local="./dependencies/interface_merkle/merkle"}
+WrappedCoin={local="./dependencies/interface_coin/coin"}
+PancakeSwap={local="./dependencies/interface_pancake/pancake"}
+AbelLend={local="./dependencies/interface_abel/abel"}
+LendProtocol={local="./dependencies/interface_aptin/aptin"}
+Tortuga={local="./dependencies/interface_tortu/tortuga"}
+PancakeMasterchef={local="./dependencies/interface_pancake_masterchef/pancake_masterchef"}
+PancakeOFT={local="./dependencies/interface_pancake_oft/pancake_oft"}
+Liquidswap={local="./dependencies/interface_liquidswap/liquidswap"}
+LiquidswapLPv05={local="./dependencies/interface_liquidswap_lp/liquidswap_lp"}
+LiquidswapLP={local="./dependencies/interface_0liquidswap_lp/0liquidswap_lp"}
+Harvest={local="./dependencies/interface_harvest/harvest"}
+cellana={local="./dependencies/interface_cellana/cellana"}
+Lending={local="./dependencies/interface_echelon/echelon"}
+AriesConfig={local="./dependencies/interface_reserve/reserve"}
